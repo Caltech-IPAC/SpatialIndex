@@ -1,0 +1,294 @@
+_htm_av3_insertsort	geometry.c	/^static void _htm_av3_insertsort(struct _htm_av3 *elts, size_t n)$/;"	f	file:
+_htm_av3_merge	geometry.c	/^static void _htm_av3_merge(struct _htm_av3 *dst,$/;"	f	file:
+_htm_av3_mergesort	geometry.c	/^static void _htm_av3_mergesort(struct _htm_av3 *elts, size_t n)$/;"	f	file:
+_htm_cov	htm.c	/^enum _htm_cov {$/;"	g	file:
+_htm_errmsg	common.c	/^static const char * const _htm_errmsg[HTM_NUM_CODES] = {$/;"	v	file:
+_htm_feasible_1d	geometry.c	/^static int _htm_feasible_1d(const struct htm_v3 *points, size_t n, double y)$/;"	f	file:
+_htm_feasible_2d	geometry.c	/^static int _htm_feasible_2d(struct _htm_pairs *I1,$/;"	f	file:
+_htm_g	geometry.c	/^static void _htm_g(double *out,$/;"	f	file:
+_htm_h	geometry.c	/^static void _htm_h(double *out,$/;"	f	file:
+_htm_ids_add	htm.c	/^HTM_INLINE struct htm_ids * _htm_ids_add(struct htm_ids *ids,$/;"	f
+_htm_ids_grow	htm.c	/^static struct htm_ids * _htm_ids_grow(struct htm_ids *ids)$/;"	f	file:
+_htm_ids_init	htm.c	/^static struct htm_ids * _htm_ids_init()$/;"	f	file:
+_htm_inv_errcode	common.c	/^static const char * const _htm_inv_errcode =$/;"	v	file:
+_htm_isect_test	htm.c	/^static int _htm_isect_test(const struct htm_v3 *v1,$/;"	f	file:
+_htm_lut4	select.c	/^static const signed char _htm_lut4[64] = {$/;"	v	file:
+_htm_lut5	select.c	/^static const signed char _htm_lut5[1024] = {$/;"	v	file:
+_htm_med3pivot	select.c	/^static size_t _htm_med3pivot(double *array, size_t n) {$/;"	f	file:
+_htm_median2	select.c	/^HTM_INLINE size_t _htm_median2(const double *array)$/;"	f
+_htm_median3	select.c	/^HTM_INLINE size_t _htm_median3(const double *array)$/;"	f
+_htm_median4	select.c	/^HTM_INLINE size_t _htm_median4(const double *array)$/;"	f
+_htm_median5	select.c	/^HTM_INLINE size_t _htm_median5(const double *array)$/;"	f
+_htm_mm	select.c	/^static size_t _htm_mm(double *array, size_t n)$/;"	f	file:
+_htm_node	htm.c	/^struct _htm_node {$/;"	s	file:
+_htm_node_make0	htm.c	/^HTM_INLINE void _htm_node_make0(struct _htm_node *node)$/;"	f
+_htm_node_make1	htm.c	/^HTM_INLINE void _htm_node_make1(struct _htm_node *node)$/;"	f
+_htm_node_make2	htm.c	/^HTM_INLINE void _htm_node_make2(struct _htm_node *node)$/;"	f
+_htm_node_make3	htm.c	/^HTM_INLINE void _htm_node_make3(struct _htm_node *node)$/;"	f
+_htm_node_prep0	htm.c	/^HTM_INLINE void _htm_node_prep0(struct _htm_node *node)$/;"	f
+_htm_node_prep1	htm.c	/^HTM_INLINE void _htm_node_prep1(struct _htm_node *node)$/;"	f
+_htm_node_prep2	htm.c	/^HTM_INLINE void _htm_node_prep2(struct _htm_node *node)$/;"	f
+_htm_nv_valid	geometry.c	/^HTM_INLINE int _htm_nv_valid(size_t n)$/;"	f
+_htm_pair	geometry.c	/^struct _htm_pair {$/;"	s	file:
+_htm_pairs	geometry.c	/^struct _htm_pairs {$/;"	s	file:
+_htm_pairs_append	geometry.c	/^HTM_INLINE void _htm_pairs_append(struct _htm_pairs *pairs,$/;"	f
+_htm_part	select.c	/^static size_t _htm_part(double *array, size_t n, size_t i)$/;"	f	file:
+_htm_partition	htm.c	/^static struct htm_v3p * _htm_partition(const struct htm_v3 *plane,$/;"	f	file:
+_htm_path	htm.c	/^struct _htm_path {$/;"	s	file:
+_htm_path_root	htm.c	/^HTM_INLINE void _htm_path_root(struct _htm_path *path, enum htm_root r)$/;"	f
+_htm_path_sort	htm.c	/^static void _htm_path_sort(struct _htm_path *path,$/;"	f	file:
+_htm_prune_g	geometry.c	/^static size_t _htm_prune_g(double *intersections,$/;"	f	file:
+_htm_prune_h	geometry.c	/^static size_t _htm_prune_h(double *intersections,$/;"	f	file:
+_htm_root_edge	htm.c	/^static const struct htm_v3 * const _htm_root_edge[24] = {$/;"	v	file:
+_htm_root_v3	htm.c	/^static const struct htm_v3 _htm_root_v3[6] = {$/;"	v	typeref:struct:htm_v3	file:
+_htm_root_vert	htm.c	/^static const struct htm_v3 * const _htm_root_vert[24] = {$/;"	v	file:
+_htm_rootpart	htm.c	/^static size_t _htm_rootpart(struct htm_v3p *points,$/;"	f	file:
+_htm_rootsort	htm.c	/^static void _htm_rootsort(size_t roots[HTM_NROOTS + 1],$/;"	f	file:
+_htm_s2circle_htmcov	htm.c	/^static enum _htm_cov _htm_s2circle_htmcov(const struct _htm_node *n,$/;"	f	file:
+_htm_s2cpoly_htmcov	htm.c	/^static enum _htm_cov _htm_s2cpoly_htmcov(const struct _htm_node *n,$/;"	f	file:
+_htm_s2ellipse_htmcov	htm.c	/^static enum _htm_cov _htm_s2ellipse_htmcov(const struct _htm_node *n,$/;"	f	file:
+_htm_s2ellipse_isect	htm.c	/^static int _htm_s2ellipse_isect(const struct htm_v3 *v1,$/;"	f	file:
+_htm_simplify_ids	htm.c	/^static void _htm_simplify_ids(struct htm_ids *ids, int n)$/;"	f	file:
+_htm_subdivide	htm.c	/^static const unsigned char * _htm_subdivide(struct _htm_node *node,$/;"	f	file:
+_htm_v3_htmroot	htm.c	/^HTM_INLINE enum htm_root _htm_v3_htmroot(const struct htm_v3 *v)$/;"	f
+_htm_vertex	htm.c	/^HTM_INLINE void _htm_vertex(struct htm_v3 *out,$/;"	f
+_htm_wcpart	select.c	/^static size_t _htm_wcpart(double *array, size_t n, size_t i)$/;"	f	file:
+add_node	tree_gen.c	/^static void add_node(struct mem_node * const root,$/;"	f	file:
+angle	geometry.c	/^    double angle;$/;"	m	struct:_htm_av3	file:
+ar	tree_gen.c	/^    struct arena ar;        \/* node memory allocator *\/$/;"	m	struct:tree_gen_context	typeref:struct:tree_gen_context::arena	file:
+ar	tree_gen.c	/^    struct arena ar;$/;"	m	struct:hash_table	typeref:struct:hash_table::arena	file:
+arena	tree_gen.c	/^struct arena {$/;"	s	file:
+arena_alloc	tree_gen.c	/^HTM_INLINE void * arena_alloc(struct arena * const a)$/;"	f
+arena_destroy	tree_gen.c	/^static void arena_destroy(struct arena * const a)$/;"	f	file:
+arena_free	tree_gen.c	/^HTM_INLINE void arena_free(struct arena * const a, void * const n)$/;"	f
+arena_init	tree_gen.c	/^static void arena_init(struct arena * const a, const size_t itemsz)$/;"	f	file:
+arena_seg	tree_gen.c	/^struct arena_seg {$/;"	s	file:
+arena_seg_init	tree_gen.c	/^static struct arena_seg * arena_seg_init(struct arena_seg * const prev,$/;"	f	file:
+array	tree_gen.c	/^    struct id_off **array;$/;"	m	struct:hash_table	typeref:struct:hash_table::id_off	file:
+assign_block	tree_gen.c	/^static void assign_block(struct tree_gen_context * const ctx,$/;"	f	file:
+attr	tree_gen.c	/^    pthread_attr_t attr;$/;"	m	struct:blk_writer	file:
+bk_write	tree_gen.c	/^static void * bk_write(void *arg)$/;"	f	file:
+bk_write_state	tree_gen.c	/^enum bk_write_state {$/;"	g	file:
+blk	tree_gen.c	/^    const void *blk;$/;"	m	struct:mrg_seg	file:
+blk_sort_ascii	tree_gen.c	/^static size_t blk_sort_ascii(char **infile,$/;"	f	file:
+blk_writer	tree_gen.c	/^struct blk_writer {$/;"	s	file:
+blk_writer_append	tree_gen.c	/^HTM_INLINE void blk_writer_append(struct blk_writer * const w,$/;"	f
+blk_writer_close	tree_gen.c	/^static void blk_writer_close(struct blk_writer * const w,$/;"	f	file:
+blk_writer_init	tree_gen.c	/^static struct blk_writer * blk_writer_init(const char * const file,$/;"	f	file:
+blk_writer_issue	tree_gen.c	/^static void blk_writer_issue(struct blk_writer * const w,$/;"	f	file:
+block	tree_gen.c	/^    uint64_t block[NLOD + 1];$/;"	m	struct:node_id	file:
+blockid	tree_gen.c	/^    uint64_t blockid[NLOD]; \/* index of next block ID to assign for each LOD *\/$/;"	m	struct:tree_gen_context	file:
+blockinfo	tree_gen.c	/^    uint32_t blockinfo[NLOD]; \/* Clark & Munro: block depth (8 MSBs) and$/;"	m	struct:mem_node	file:
+buf	tree_gen.c	/^    unsigned char *buf; \/* Current block pointer *\/$/;"	m	struct:blk_writer	file:
+cap	tree_gen.c	/^    size_t cap;$/;"	m	struct:hash_table	file:
+child	htm.c	/^    int child;                      \/**< Index of next child (0-3). *\/$/;"	m	struct:_htm_node	file:
+child	tree_gen.c	/^    struct mem_node *child[4];$/;"	m	struct:mem_node	typeref:struct:mem_node::mem_node	file:
+child	tree_gen.c	/^    struct mem_node *child[8];$/;"	m	struct:tree_root	typeref:struct:tree_root::mem_node	file:
+child	tree_gen.c	/^    struct node_id child[4];$/;"	m	struct:disk_node	typeref:struct:disk_node::node_id	file:
+child_info	tree_gen.c	/^struct child_info {$/;"	s	file:
+child_info_isort	tree_gen.c	/^static void child_info_isort(struct child_info * const c, const int n)$/;"	f	file:
+childid	tree_gen.c	/^    struct node_id childid[8];$/;"	m	struct:tree_root	typeref:struct:tree_root::node_id	file:
+circle_count	tree_count.c	/^static void circle_count(const char * const treefile,$/;"	f	file:
+circle_list	id_list.c	/^static void circle_list(char **argv)$/;"	f	file:
+compress_node	tree_gen.c	/^static uint64_t compress_node(struct hash_table * const ht,$/;"	f	file:
+count	tree_gen.c	/^    uint64_t count;           \/* Number of points in node *\/$/;"	m	struct:mem_node	file:
+count	tree_gen.c	/^    uint64_t count; \/* Total number of points in tree *\/$/;"	m	struct:tree_root	file:
+count	tree_gen.c	/^    uint64_t count;$/;"	m	struct:disk_node	file:
+cur	tree_gen.c	/^    const void *cur;$/;"	m	struct:mrg_seg	file:
+cv	tree_gen.c	/^    pthread_cond_t cv;$/;"	m	struct:blk_writer	file:
+decimal	id_list.c	/^static int decimal = 0;$/;"	v	file:
+depth	tree_gen.c	/^    uint8_t depth;$/;"	m	struct:child_info	file:
+disk_node	tree_gen.c	/^struct disk_node {$/;"	s	file:
+disk_node_cmp	tree_gen.c	/^static int disk_node_cmp(const void *n1, const void * n2)$/;"	f	file:
+disk_node_isort	tree_gen.c	/^static void disk_node_isort(struct disk_node *nodes, size_t n)$/;"	f	file:
+disk_node_lt	tree_gen.c	/^HTM_INLINE int disk_node_lt(const struct disk_node *n1,$/;"	f
+disk_node_qsort	tree_gen.c	/^static void disk_node_qsort(struct disk_node *nodes, size_t left, size_t right)$/;"	f	file:
+disk_node_sort	tree_gen.c	/^static void disk_node_sort(void *data, size_t nbytes)$/;"	f	file:
+eat_delim	tree_gen.c	/^static char * eat_delim(char *s, char delim, const char *fname, size_t lineno)$/;"	f	file:
+eat_ws	tree_gen.c	/^static char * eat_ws(char *s, char delim, const char *fname, size_t lineno)$/;"	f	file:
+ec	poly_test.c	/^enum htm_errcode ec = HTM_OK;$/;"	v	typeref:enum:htm_errcode
+edge	htm.c	/^    const struct htm_v3 *edge[3];   \/**< Triangle edge normal pointers. *\/$/;"	m	struct:_htm_node	typeref:struct:_htm_node::htm_v3	file:
+ellipse_count	tree_count.c	/^static void ellipse_count(const char * const treefile,$/;"	f	file:
+ellipse_list	id_list.c	/^static void ellipse_list(char **argv)$/;"	f	file:
+emit_node	tree_gen.c	/^static void emit_node(struct mem_node * const node,$/;"	f	file:
+end	htm.c	/^    struct htm_v3p *end;            \/**< Temporary used for HTM indexing. *\/$/;"	m	struct:_htm_node	typeref:struct:_htm_node::htm_v3p	file:
+end	tree_gen.c	/^    const void *end;$/;"	m	struct:mrg_seg	file:
+err	id_list.c	/^static void err(const char *fmt, ...)$/;"	f	file:
+err	tree_count.c	/^static void err(const char *fmt, ...)$/;"	f	file:
+err	tree_gen.c	/^static void err(const char *fmt, ...)$/;"	f	file:
+esc	tree_count.c	/^static const char * esc(const char *s) {$/;"	f	file:
+estimate	tree_count.c	/^static int estimate = 0;$/;"	v	file:
+estimate_node_size	tree_gen.c	/^static uint32_t estimate_node_size(const struct mem_node * const node,$/;"	f	file:
+ext_sort	tree_gen.c	/^static void ext_sort(const char *file,$/;"	f	file:
+fd	tree_gen.c	/^    int fd;             \/* File descriptor of file being written to *\/$/;"	m	struct:blk_writer	file:
+finish_root	tree_gen.c	/^static void finish_root(struct tree_root * const super,$/;"	f	file:
+first	geometry.c	/^    double first;$/;"	m	struct:_htm_pair	file:
+get_block_depth	tree_gen.c	/^HTM_INLINE uint8_t get_block_depth(uint32_t blockinfo) {$/;"	f
+get_block_size	tree_gen.c	/^HTM_INLINE uint32_t get_block_size(uint32_t blockinfo) {$/;"	f
+get_double	id_list.c	/^static double get_double(const char *s)$/;"	f	file:
+get_double	tree_count.c	/^static double get_double(const char *s)$/;"	f	file:
+get_level	id_list.c	/^static void get_level(const char *s)$/;"	f	file:
+get_maxranges	id_list.c	/^static void get_maxranges(const char *s)$/;"	f	file:
+hash_table	tree_gen.c	/^struct hash_table {$/;"	s	file:
+hash_table_add	tree_gen.c	/^static void hash_table_add(struct hash_table * const ht,$/;"	f	file:
+hash_table_destroy	tree_gen.c	/^static void hash_table_destroy(struct hash_table *ht)$/;"	f	file:
+hash_table_get	tree_gen.c	/^static uint64_t hash_table_get(struct hash_table * const ht,$/;"	f	file:
+hash_table_grow	tree_gen.c	/^static void hash_table_grow(struct hash_table *ht) {$/;"	f	file:
+hash_table_init	tree_gen.c	/^static void hash_table_init(struct hash_table *ht)$/;"	f	file:
+head	tree_gen.c	/^    struct mem_node *head;  \/* head of linked list of free memory locations *\/$/;"	m	struct:arena	typeref:struct:arena::mem_node	file:
+heap_down	tree_gen.c	/^static void heap_down(struct mrg_seg *segs,$/;"	f	file:
+heap_up	tree_gen.c	/^static void heap_up(struct mrg_seg *segs,$/;"	f	file:
+htm_errmsg	common.c	/^const char * htm_errmsg(enum htm_errcode err)$/;"	f
+htm_idtodec	htm.c	/^int64_t htm_idtodec(int64_t id)$/;"	f
+htm_level	htm.c	/^int htm_level(int64_t id)$/;"	f
+htm_min	select.c	/^double htm_min(const double *array, size_t n)$/;"	f
+htm_s2circle_ids	htm.c	/^struct htm_ids * htm_s2circle_ids(struct htm_ids *ids,$/;"	f
+htm_s2cpoly_area	geometry.c	/^double htm_s2cpoly_area(const struct htm_s2cpoly *poly)$/;"	f
+htm_s2cpoly_box	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_box(const struct htm_v3 *cen,$/;"	f
+htm_s2cpoly_clone	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_clone(const struct htm_s2cpoly *poly)$/;"	f
+htm_s2cpoly_cv3	geometry.c	/^int htm_s2cpoly_cv3(const struct htm_s2cpoly *cp, const struct htm_v3 *v)$/;"	f
+htm_s2cpoly_hull	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_hull(const struct htm_v3 *points,$/;"	f
+htm_s2cpoly_ids	htm.c	/^struct htm_ids * htm_s2cpoly_ids(struct htm_ids *ids,$/;"	f
+htm_s2cpoly_init	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_init(const struct htm_v3 *verts,$/;"	f
+htm_s2cpoly_line	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_line(const struct htm_v3 *v1,$/;"	f
+htm_s2cpoly_ngon	geometry.c	/^struct htm_s2cpoly * htm_s2cpoly_ngon(const struct htm_v3 *cen,$/;"	f
+htm_s2cpoly_pad	geometry.c	/^enum htm_errcode htm_s2cpoly_pad(struct htm_s2cpoly *poly, double r)$/;"	f
+htm_s2ellipse_ids	htm.c	/^struct htm_ids * htm_s2ellipse_ids(struct htm_ids *ids,$/;"	f
+htm_s2ellipse_init	geometry.c	/^enum htm_errcode htm_s2ellipse_init(struct htm_s2ellipse * const ell,$/;"	f
+htm_s2ellipse_init2	geometry.c	/^enum htm_errcode htm_s2ellipse_init2(struct htm_s2ellipse *ellipse,$/;"	f
+htm_sc_angsep	geometry.c	/^double htm_sc_angsep(const struct htm_sc *p1, const struct htm_sc *p2)$/;"	f
+htm_sc_dist2	geometry.c	/^double htm_sc_dist2(const struct htm_sc *p1, const struct htm_sc *p2)$/;"	f
+htm_sc_tov3	geometry.c	/^enum htm_errcode htm_sc_tov3(struct htm_v3 *out, const struct htm_sc *p)$/;"	f
+htm_select	select.c	/^double htm_select(double *array, size_t n, size_t k)$/;"	f
+htm_selectmm	select.c	/^double htm_selectmm(double *array, size_t n, size_t k)$/;"	f
+htm_tree_destroy	tree.c	/^void htm_tree_destroy(struct htm_tree *tree)$/;"	f
+htm_tree_init	tree.c	/^enum htm_errcode htm_tree_init(struct htm_tree *tree,$/;"	f
+htm_tree_lock	tree.c	/^enum htm_errcode htm_tree_lock(struct htm_tree *tree, size_t datathresh)$/;"	f
+htm_tree_s2circle_count	htm.c	/^int64_t htm_tree_s2circle_count(const struct htm_tree *tree,$/;"	f
+htm_tree_s2circle_range	htm.c	/^struct htm_range htm_tree_s2circle_range(const struct htm_tree *tree,$/;"	f
+htm_tree_s2circle_scan	tree.c	/^int64_t htm_tree_s2circle_scan(const struct htm_tree *tree,$/;"	f
+htm_tree_s2cpoly_count	htm.c	/^int64_t htm_tree_s2cpoly_count(const struct htm_tree *tree,$/;"	f
+htm_tree_s2cpoly_range	htm.c	/^struct htm_range htm_tree_s2cpoly_range(const struct htm_tree *tree,$/;"	f
+htm_tree_s2cpoly_scan	tree.c	/^int64_t htm_tree_s2cpoly_scan(const struct htm_tree *tree,$/;"	f
+htm_tree_s2ellipse_count	htm.c	/^int64_t htm_tree_s2ellipse_count(const struct htm_tree *tree,$/;"	f
+htm_tree_s2ellipse_range	htm.c	/^struct htm_range htm_tree_s2ellipse_range(const struct htm_tree *tree,$/;"	f
+htm_tree_s2ellipse_scan	tree.c	/^int64_t htm_tree_s2ellipse_scan(const struct htm_tree *tree,$/;"	f
+htm_tri_init	htm.c	/^enum htm_errcode htm_tri_init(struct htm_tri *tri, int64_t id)$/;"	f
+htm_v3_angsep	geometry.c	/^double htm_v3_angsep(const struct htm_v3 *v1, const struct htm_v3 *v2)$/;"	f
+htm_v3_angsepu	geometry.c	/^double htm_v3_angsepu(const struct htm_v3 *unit_v1,$/;"	f
+htm_v3_centroid	geometry.c	/^enum htm_errcode htm_v3_centroid(struct htm_v3 *cen,$/;"	f
+htm_v3_convex	geometry.c	/^int htm_v3_convex(const struct htm_v3 *points,$/;"	f
+htm_v3_edgedist2	geometry.c	/^double htm_v3_edgedist2(const struct htm_v3 *v,$/;"	f
+htm_v3_hemispherical	geometry.c	/^int htm_v3_hemispherical(const struct htm_v3 *points,$/;"	f
+htm_v3_id	htm.c	/^int64_t htm_v3_id(const struct htm_v3 *point, int level)$/;"	f
+htm_v3_ne	geometry.c	/^enum htm_errcode htm_v3_ne(struct htm_v3 *north,$/;"	f
+htm_v3_rot	geometry.c	/^enum htm_errcode htm_v3_rot(struct htm_v3 *out,$/;"	f
+htm_v3_tanrot	geometry.c	/^enum htm_errcode htm_v3_tanrot(double *angle,$/;"	f
+htm_v3_tosc	geometry.c	/^enum htm_errcode htm_v3_tosc(struct htm_sc *out, const struct htm_v3 *v)$/;"	f
+htm_v3p_idsort	htm.c	/^enum htm_errcode htm_v3p_idsort(struct htm_v3p *points,$/;"	f
+htmid	tree_gen.c	/^    int64_t htmid;            \/* HTM ID of node *\/$/;"	m	struct:mem_node	file:
+htmid	tree_gen.c	/^    int64_t htmid;$/;"	m	struct:tree_entry	file:
+hull_count	tree_count.c	/^static void hull_count(const char * const treefile,$/;"	f	file:
+hull_list	id_list.c	/^static void hull_list(const int argc,$/;"	f	file:
+i	tree_gen.c	/^    size_t i;           \/* Number of bytes in current block *\/$/;"	m	struct:blk_writer	file:
+id	htm.c	/^    int64_t id;                     \/**< HTM ID of the node. *\/$/;"	m	struct:_htm_node	file:
+id	tree_gen.c	/^    struct node_id id;        \/* Hierarchical ID for node *\/$/;"	m	struct:mem_node	typeref:struct:mem_node::node_id	file:
+id	tree_gen.c	/^    struct node_id id;$/;"	m	struct:disk_node	typeref:struct:disk_node::node_id	file:
+id	tree_gen.c	/^    struct node_id id;$/;"	m	struct:id_off	typeref:struct:id_off::node_id	file:
+id_off	tree_gen.c	/^struct id_off {$/;"	s	file:
+idx	tree_gen.c	/^    int8_t idx;$/;"	m	struct:child_info	file:
+index	htm.c	/^    uint64_t index;                 \/**< Temporary used for tree searches. *\/$/;"	m	struct:_htm_node	file:
+index	tree_gen.c	/^    uint64_t index;           \/* File offset of first point in node *\/$/;"	m	struct:mem_node	file:
+index	tree_gen.c	/^    uint64_t index;$/;"	m	struct:disk_node	file:
+ioblksz	tree_gen.c	/^    size_t ioblksz; \/* Size of IO blocks *\/$/;"	m	struct:mem_params	file:
+is_convex	poly_test.c	/^int is_convex( struct htm_v3 * verts, int n_vert ) {$/;"	f
+itemsz	tree_gen.c	/^    size_t itemsz;$/;"	m	struct:arena	file:
+json	tree_count.c	/^static int json = 0;$/;"	v	file:
+k	tree_gen.c	/^    size_t k;       \/* Number of merge segments in one multi-way merge pass *\/$/;"	m	struct:mem_params	file:
+layout_node	tree_gen.c	/^static void layout_node(struct mem_node * const node,$/;"	f	file:
+layout_size	tree_gen.c	/^static const uint32_t layout_size[NLOD] = {$/;"	v	file:
+leafthresh	tree_gen.c	/^    uint64_t leafthresh;    \/* maximum # of points per leaf *\/$/;"	m	struct:tree_gen_context	file:
+level	id_list.c	/^static int level = 0;$/;"	v	file:
+mReadline	poly_test.c	/^char * mReadline( char * in ) {$/;"	f
+main	id_list.c	/^int main(int argc, char **argv)$/;"	f
+main	poly_test.c	/^int main( int argc, char *argv[], char  *envp[] ) {$/;"	f
+main	tree_count.c	/^int main(int argc, char **argv)$/;"	f
+main	tree_gen.c	/^int main(int argc, char **argv)$/;"	f
+make_block_info	tree_gen.c	/^HTM_INLINE uint32_t make_block_info(uint32_t size, uint8_t depth) {$/;"	f
+maxranges	id_list.c	/^static size_t maxranges = SIZE_MAX;$/;"	v	file:
+mem	tree_gen.c	/^    void *mem;          \/* Space for 2 blocks of n tree entries *\/$/;"	m	struct:blk_writer	file:
+mem	tree_gen.c	/^    void *mem;$/;"	m	struct:arena_seg	file:
+mem_node	tree_gen.c	/^struct mem_node {$/;"	s	file:
+mem_params	tree_gen.c	/^struct mem_params {$/;"	s	file:
+mem_params_init	tree_gen.c	/^static void mem_params_init(struct mem_params *mem,$/;"	f	file:
+memsz	tree_gen.c	/^    size_t memsz;       \/* Size of mem in bytes *\/$/;"	m	struct:blk_writer	file:
+memsz	tree_gen.c	/^    size_t memsz;   \/* Max memory usage in bytes *\/$/;"	m	struct:mem_params	file:
+mid_edge	htm.c	/^    struct htm_v3 mid_edge[3];      \/**< Subdivision plane normals. *\/$/;"	m	struct:_htm_node	typeref:struct:_htm_node::htm_v3	file:
+mid_vert	htm.c	/^    struct htm_v3 mid_vert[3];      \/**< Triangle edge mid-points. *\/$/;"	m	struct:_htm_node	typeref:struct:_htm_node::htm_v3	file:
+mrg_npasses	tree_gen.c	/^static int mrg_npasses(size_t n, size_t k) {$/;"	f	file:
+mrg_pass	tree_gen.c	/^static void mrg_pass(struct blk_writer * const w,$/;"	f	file:
+mrg_seg	tree_gen.c	/^struct mrg_seg {$/;"	s	file:
+mrg_seg_advance	tree_gen.c	/^static int mrg_seg_advance(struct mrg_seg * const s,$/;"	f	file:
+mrg_seg_consume	tree_gen.c	/^HTM_INLINE int mrg_seg_consume(struct mrg_seg * const s,$/;"	f
+mrg_seg_init	tree_gen.c	/^static void mrg_seg_init(struct mrg_seg * const s,$/;"	f	file:
+msg	tree_gen.c	/^static void msg(const char *fmt, ...)$/;"	f	file:
+mtx	tree_gen.c	/^    pthread_mutex_t mtx;$/;"	m	struct:blk_writer	file:
+n	geometry.c	/^    size_t n;                  \/**< Number of pairs in list. *\/$/;"	m	struct:_htm_pairs	file:
+n	tree_gen.c	/^    size_t n;           \/* Number of bytes per block *\/$/;"	m	struct:blk_writer	file:
+n	tree_gen.c	/^    size_t n;$/;"	m	struct:hash_table	file:
+next	tree_gen.c	/^    struct id_off *next;$/;"	m	struct:id_off	typeref:struct:id_off::id_off	file:
+nnodes	tree_gen.c	/^    size_t   nnodes;        \/* number of nodes in the tree *\/$/;"	m	struct:tree_gen_context	file:
+node	htm.c	/^    struct _htm_node node[HTM_MAX_LEVEL + 1];$/;"	m	struct:_htm_path	typeref:struct:_htm_path::_htm_node	file:
+node	tree_gen.c	/^    struct mem_node *node;$/;"	m	struct:child_info	typeref:struct:child_info::mem_node	file:
+node_empty	tree_gen.c	/^HTM_INLINE int node_empty(const struct node_id * const id)$/;"	f
+node_id	tree_gen.c	/^struct node_id {$/;"	s	file:
+node_id_eq	tree_gen.c	/^HTM_INLINE int node_id_eq(const struct node_id * const id1,$/;"	f
+node_id_lt	tree_gen.c	/^HTM_INLINE int node_id_lt(const struct node_id * const id1,$/;"	f
+node_status	tree_gen.c	/^enum node_status {$/;"	g	file:
+now	tree_gen.c	/^static double now() {$/;"	f	file:
+nseg	tree_gen.c	/^    size_t nseg;$/;"	m	struct:arena	file:
+off	tree_gen.c	/^    uint64_t off;$/;"	m	struct:id_off	file:
+pairs	geometry.c	/^    struct _htm_pair pairs[];  \/**< Pair array. *\/$/;"	m	struct:_htm_pairs	typeref:struct:_htm_pairs::_htm_pair	file:
+poidx	tree_gen.c	/^    uint64_t poidx;         \/* next post-order tree traversal index *\/$/;"	m	struct:tree_gen_context	file:
+prev	tree_gen.c	/^    struct arena_seg *prev;$/;"	m	struct:arena_seg	typeref:struct:arena_seg::arena_seg	file:
+print_count	tree_count.c	/^static void print_count(int64_t count)$/;"	f	file:
+print_ids	id_list.c	/^static void print_ids(const struct htm_ids * const ids)$/;"	f	file:
+print_range	tree_count.c	/^static void print_range(const struct htm_range *range)$/;"	f	file:
+ranges	id_list.c	/^static int ranges = 0;$/;"	v	file:
+report_pts	poly_test.c	/^void report_pts( struct htm_sc * p, int np ) {$/;"	f
+report_verts	poly_test.c	/^void report_verts( struct htm_v3 * v, int nv ) {$/;"	f
+reverse_file	tree_gen.c	/^static void reverse_file(const char * const infile,$/;"	f	file:
+root	htm.c	/^    enum htm_root root; \/**< ordinal of root triangle (0-7) *\/$/;"	m	struct:_htm_path	typeref:enum:_htm_path::htm_root	file:
+rowid	tree_gen.c	/^    int64_t rowid;$/;"	m	struct:tree_entry	file:
+s	htm.c	/^    const unsigned char *s;         \/**< Temporary used for tree searches. *\/$/;"	m	struct:_htm_node	file:
+sc	tree_gen.c	/^    struct htm_sc sc;$/;"	m	struct:tree_entry	typeref:struct:tree_entry::htm_sc	file:
+second	geometry.c	/^    double second;$/;"	m	struct:_htm_pair	file:
+size	tree_gen.c	/^    uint32_t size;$/;"	m	struct:child_info	file:
+sortsz	tree_gen.c	/^    size_t sortsz;  \/* Size of blocks operated on by in-memory sorts *\/$/;"	m	struct:mem_params	file:
+spherical_to_vec	tree_gen.c	/^static void spherical_to_vec(const char * const datafile,$/;"	f	file:
+state	tree_gen.c	/^    enum bk_write_state state;$/;"	m	struct:blk_writer	typeref:enum:blk_writer::bk_write_state	file:
+status	tree_gen.c	/^    enum node_status status;$/;"	m	struct:mem_node	typeref:enum:mem_node::node_status	file:
+tail	tree_gen.c	/^    struct arena_seg *tail; \/* reverse linked list of memory segments *\/$/;"	m	struct:arena	typeref:struct:arena::arena_seg	file:
+test_tree	tree_count.c	/^static void test_tree(const char * const treefile,$/;"	f	file:
+thr	tree_gen.c	/^    pthread_t thr;$/;"	m	struct:blk_writer	file:
+tree_compress	tree_gen.c	/^static uint64_t tree_compress(const char * const treefile,$/;"	f	file:
+tree_entry	tree_gen.c	/^struct tree_entry {$/;"	s	file:
+tree_entry_cmp	tree_gen.c	/^static int tree_entry_cmp(const void *e1, const void *e2)$/;"	f	file:
+tree_entry_isort	tree_gen.c	/^static void tree_entry_isort(struct tree_entry *entries, size_t n)$/;"	f	file:
+tree_entry_lt	tree_gen.c	/^HTM_INLINE int tree_entry_lt(const struct tree_entry *e1,$/;"	f
+tree_entry_qsort	tree_gen.c	/^static void tree_entry_qsort(struct tree_entry *entries,$/;"	f	file:
+tree_entry_sort	tree_gen.c	/^static void tree_entry_sort(void *data, size_t nbytes)$/;"	f	file:
+tree_gen	tree_gen.c	/^static size_t tree_gen(const char * const datafile,$/;"	f	file:
+tree_gen_context	tree_gen.c	/^struct tree_gen_context {$/;"	s	file:
+tree_gen_context_destroy	tree_gen.c	/^static void tree_gen_context_destroy(struct tree_gen_context * const ctx)$/;"	f	file:
+tree_gen_context_init	tree_gen.c	/^static void tree_gen_context_init(struct tree_gen_context * const ctx,$/;"	f	file:
+tree_root	tree_gen.c	/^struct tree_root {$/;"	s	file:
+usage	id_list.c	/^static void usage(const char *prog)$/;"	f	file:
+usage	tree_count.c	/^static void usage(const char *prog)$/;"	f	file:
+usage	tree_gen.c	/^static void usage(const char *prog) {$/;"	f	file:
+v	geometry.c	/^    struct htm_v3 v;$/;"	m	struct:_htm_av3	typeref:struct:_htm_av3::htm_v3	file:
+vert	htm.c	/^    const struct htm_v3 *vert[3];   \/**< Triangle vertex pointers. *\/$/;"	m	struct:_htm_node	typeref:struct:_htm_node::htm_v3	file:
+wr	tree_gen.c	/^    struct blk_writer *wr;  \/* node writer *\/$/;"	m	struct:tree_gen_context	typeref:struct:tree_gen_context::blk_writer	file:
+wrbuf	tree_gen.c	/^    unsigned char *wrbuf;$/;"	m	struct:blk_writer	file:
+wrbytes	tree_gen.c	/^    size_t wrbytes;$/;"	m	struct:blk_writer	file:
+write_tree_header	tree_gen.c	/^static uint64_t write_tree_header(struct hash_table * const ht,$/;"	f	file:
