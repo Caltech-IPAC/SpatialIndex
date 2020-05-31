@@ -14,7 +14,7 @@ sptind_extension = Extension(
 )
 setup(
     name = "spatial_index",
-    version = '1.0',
+    version = '1.0.1',
     author = 'John Good',
     author_email = 'jcg@ipac.caltech.edu',
     description = 'Library for generating DBMS spatial index constraints.',
