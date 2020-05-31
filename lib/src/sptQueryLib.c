@@ -564,13 +564,13 @@ struct sptConstraints sptConeSearch(char *indname, int indexMode, int indexEncod
       printf("# EXACT CONE CONSTRAINT -----------------------------------\n\n");
       fflush(stdout);
 
-      printf("WHERE (%.17f*%s)+(%.17f*%s)+(%.17f*%s)>=%.17e\n\n", vec.x, xcol, vec.y, ycol, vec.z, zcol, cosrad);
+      printf("WHERE (%.12f*%s)+(%.12f*%s)+(%.12f*%s)>=%.12e\n\n", vec.x, xcol, vec.y, ycol, vec.z, zcol, cosrad);
 
       printf("# ---------------------------------------------------------\n\n");
       fflush(stdout);
    }
 
-   sprintf(constraints.geomConstraint, "(%.17f*%s)+(%.17f*%s)+(%.17f*%s)>=%.17e", vec.x, xcol, vec.y, ycol, vec.z, zcol, cosrad);
+   sprintf(constraints.geomConstraint, "(%.12f*%s)+(%.12f*%s)+(%.12f*%s)>=%.12e", vec.x, xcol, vec.y, ycol, vec.z, zcol, cosrad);
 
    free(list);
    free(skipped);
@@ -1199,10 +1199,10 @@ struct sptConstraints sptPolygonSearch(char *indname, int indexMode, int indexEn
       printf("# EXACT POLYGON CONSTRAINT ----------------------------------\n\n");
       fflush(stdout);
 
-      printf("WHERE (%20.17f*x)+(%20.17f*y)+(%20.17f*z)>=0.\n", normal[0].x, normal[0].y, normal[0].z);
+      printf("WHERE (%.12f*x)+(%.12f*y)+(%.12f*z)>=0.\n", normal[0].x, normal[0].y, normal[0].z);
 
       for(i=1; i<npoly; ++i)
-         printf("AND   (%20.17f*x)+(%20.17f*y)+(%20.17f*z)>=0.\n", normal[i].x, normal[i].y, normal[i].z);
+         printf("AND   (%.12f*x)+(%.12f*y)+(%.12f*z)>=0.\n", normal[i].x, normal[i].y, normal[i].z);
 
       printf("# ---------------------------------------------------------\n\n");
       fflush(stdout);
@@ -1211,13 +1211,13 @@ struct sptConstraints sptPolygonSearch(char *indname, int indexMode, int indexEn
 
    strcpy(constraints.geomConstraint, "");
 
-   sprintf(tmpstr, "(%.17f*%s)+(%.17f*%s)+(%.17f*%s)>=0.", normal[0].x, xcol, normal[0].y, ycol, normal[0].z, zcol);
+   sprintf(tmpstr, "(%.12f*%s)+(%.12f*%s)+(%.12f*%s)>=0.", normal[0].x, xcol, normal[0].y, ycol, normal[0].z, zcol);
 
    strcat(constraints.geomConstraint, tmpstr);
 
    for(i=1; i<npoly; ++i)
    {
-      sprintf(tmpstr, " AND (%.17f*%s)+(%.17f*%s)+(%.17f*%s)>=0.", normal[i].x, xcol, normal[i].y, ycol, normal[i].z, zcol);
+      sprintf(tmpstr, " AND (%.12f*%s)+(%.12f*%s)+(%.12f*%s)>=0.", normal[i].x, xcol, normal[i].y, ycol, normal[i].z, zcol);
 
       strcat(constraints.geomConstraint, tmpstr);
    }
