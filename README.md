@@ -1,4 +1,4 @@
-#SpatialIndex
+# SpatialIndex
 Spatial Indexing Library for Astronomy
 
 One of the most common database searches in astronomy involves finding all the 
