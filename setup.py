@@ -18,7 +18,7 @@ setup(
     author = 'John Good',
     author_email = 'jcg@ipac.caltech.edu',
     description = 'Library for generating DBMS spatial index constraints.',
-    long_description = open('README.txt').read(),
+    long_description = open('README.md').read(),
     license = 'LICENSE.txt',
     keywords = 'astronomy database spatial-index',
     url = 'https://github.com/Caltech-IPAC/SpatialIndex',
