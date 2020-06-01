@@ -7,7 +7,6 @@ libs:
 
 spatial_index:	setup.py spatial_index.pyx
 					python setup.py bdist_wheel
-					pip install -t ../lib --upgrade dist/*.whl
 
 pgm:				
 					(cd src; make; make install)
