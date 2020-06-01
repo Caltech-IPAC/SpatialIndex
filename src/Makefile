@@ -22,7 +22,7 @@ htmCell.o:	htmCell.c
 				gcc -m64 -c -Wall -I../lib/src/tinyhtm/include htmCell.c
 
 install:
-	         mkdir -f ../bin
+	         mkdir -p ../bin
 				cp sptIndx sptQuery htmCell ../bin
 
 clean:
