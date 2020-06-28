@@ -1,3 +1,11 @@
+/*
+  Copyright (c) 2020, Caltech IPAC.
+
+  License information at
+    https://github.com/Caltech-IPAC/nexsciTAP/blob/master/LICENSE
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
