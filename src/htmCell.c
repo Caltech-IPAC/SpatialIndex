@@ -21,7 +21,7 @@ int debug = 0;
 
 /******************************************************************/
 /*                                                                */
-/* HTPCELL                                                        */
+/* HTMCELL                                                        */
 /*                                                                */
 /* The purpose of this program is to compute the x,y,z HTM cell   */
 /* values for a given (ra,dec).                                   */
