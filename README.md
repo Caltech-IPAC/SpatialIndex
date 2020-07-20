@@ -1,5 +1,8 @@
 # SpatialIndex
-Spatial Indexing Library for Astronomy
+
+## Spatial Indexing Library for Astronomy
+
+Develop branch (please do any future development here)
 
 One of the most common database searches in astronomy involves finding all the 
 objects in a region of the sky.  Basic DBMS engines provide efficient indexed 
