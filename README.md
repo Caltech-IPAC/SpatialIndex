@@ -12,15 +12,15 @@ R-Trees) but this is neither universal nor uniform.
 
 It is, however, possible to leverage the standard internal database indexing
 (B-Tree) to support impressively efficient 2D indexing.  If one tesselates the
-sky into a heirarchical, Z-ordered space (using a scheme like a Heirarchical
+sky into a hierarchical, Z-ordered space (using a scheme like a Heirarchical
 Triangular Mesh (HTM)  or Hierarchical Equal Area isoLatitude Pixelization
 (HEALPix)), then any "object" (sky coordinate) belongs to a specific 
 tesselation cell and each cell has a unique ID (number).  This number can
 be stored in an integer column in the database table.
 
 Then when one wants to perform a spatial search, the region can be converted
-to a range (actually set of ranges) of spatial index cell numbers and, 
-because of the Z-ordering) these ranges tend to be co-located and can be
+to a range (actually set of ranges) of spatial index cell numbers and
+(because of the Z-ordering) these ranges tend to be co-located and can be
 accessed efficiently.  For large tables, this can speed up queries by orders
 of magnitude.
 
@@ -56,13 +56,13 @@ Fragments like this get inserted into the SQL statement as appropriate.
 
 Building the Python library:
 
-The spatial index code need to be wrapped for Python use.  This is taken care
-of the Makefile but consists of using Cython to compile the spatial-index.pyx
+The C spatial index code needs to be wrapped for Python use.  This is taken care
+of in the Makefile and consists of using Cython to compile the spatial-index.pyx
 code (Python with Cython directives) into "spatial_index.c", then building 
-a LINUX library from the this plus our C libraries (our C code plus tinyhtm).
-This results in "spatial_index.cpython-37m-x86_64-linux-gnu.so". which has the
-right content to be loadable by the Python runtime and accessed by Python
-calls.
+a LINUX library from the result plus our C libraries (our C code plus tinyhtm).
+This results in a library file "spatial_index.cpython-37m-x86_64-linux-gnu.so"
+which has the right content to be loadable by the Python runtime and accessed by 
+Python calls.
 
 The last step is to turn this into a Wheel file that can be pip-install in
 our Python distribution and/or uploaded to PyPI.  This file is
