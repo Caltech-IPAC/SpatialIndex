@@ -303,18 +303,18 @@ struct sptConstraints sptConeSearch(char *indname, int indexMode, int indexEncod
                if(indexEncoding == 1)
                {
                   if(i == 0)
-                     printf("      (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")  // %" PRId64 " to  %" PRId64 "\n",
+                     printf("      (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")    // %" PRId64 " to  %" PRId64 "\n",
                            level, list[id].min, list[id].max, htm_idtodec(list[id].min), htm_idtodec(list[id].max));
                   else
-                     printf("   OR (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")  // %" PRId64 " to  %" PRId64 "\n",
+                     printf("   OR (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")   // %" PRId64 " to  %" PRId64 "\n",
                            level, list[id].min, list[id].max, htm_idtodec(list[id].min), htm_idtodec(list[id].max));
                }
                else
                {
                   if(i == 0)
-                     printf("      (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")\n", level, list[id].min, list[id].max);
+                     printf("      (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")   \n", level, list[id].min, list[id].max);
                   else
-                     printf("   OR (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")\n", level, list[id].min, list[id].max);
+                     printf("   OR (htm%d BETWEEN %" PRId64 " AND %" PRId64 ")   \n", level, list[id].min, list[id].max);
                }
             }
             
@@ -960,14 +960,14 @@ struct sptConstraints sptPolygonSearch(char *indname, int indexMode, int indexEn
             }
          }
 
+         strcat(constraints.indexConstraint, tmpstr);
+
          if(list[id].next == -1)
             break;
 
          id = list[id].next;
 
          ++i;
-
-         strcat(constraints.indexConstraint, tmpstr);
       }
 
       if(sptDebug)
@@ -1166,14 +1166,14 @@ struct sptConstraints sptPolygonSearch(char *indname, int indexMode, int indexEn
                sprintf(tmpstr, " OR (%s BETWEEN %" PRIu64 " AND %" PRIu64 ")", indname, list[id].min, list[id].max);
          }
 
+         strcat(constraints.indexConstraint, tmpstr);
+
          if(list[id].next == -1)
             break;
 
          id = list[id].next;
 
          ++i;
-
-         strcat(constraints.indexConstraint, tmpstr);
       }
 
       free(list);
