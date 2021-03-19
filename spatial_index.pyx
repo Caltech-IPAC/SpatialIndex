@@ -74,9 +74,9 @@ class SpatialIndex:
         zcol: string, optional, default 'z'
             Column name for sky position three-vector Z component
         colname: string, optional, default depends on mode and encoding
-            Column name for sky position three-vector Z component
-        encoding: string, optional, default depends on mode and encoding
-            Column name for sky position three-vector Z component
+            Column name for the HTM/HPX integer spatial index
+        encoding: string, optional, default 'BASE10'
+            Encoding ('BASE10' or 'BASE4') of the HTM/HPX integer spatial index
             
         Returns
         -------
@@ -142,9 +142,9 @@ class SpatialIndex:
         zcol: string, optional, default 'z'
             Column name for sky position three-vector Z component
         colname: string, optional, default depends on mode and encoding
-            Column name for sky position three-vector Z component
-        encoding: string, optional, default depends on mode and encoding
-            Column name for sky position three-vector Z component
+            Column name for the HTM/HPX integer spatial index
+        encoding: string, optional, default 'BASE10'
+            Encoding ('BASE10' or 'BASE4') of the HTM/HPX integer spatial index
 
         Returns
         -------
