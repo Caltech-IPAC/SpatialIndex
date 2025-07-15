@@ -4,24 +4,28 @@ from setuptools import setup
 from distutils.extension import Extension
 from Cython.Build import cythonize
 
-sptind_extension = Extension(
-    name="spatial_index",
-    sources = ["spatial_index.pyx"],
-    extra_objects = ["lib/sptQueryLib.o"],
-    libraries = ["htm"],
-    library_dirs = ["lib"],
-    include_dirs = ["lib/include"]
+objs = []
+ 
+objs.append('SpatialIndex/lib/src/sptQueryLib.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/htm.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/tree.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/common.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/id_list.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/tree_count.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/tree_gen.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/geometry.o')
+objs.append('SpatialIndex/lib/src/tinyhtm/src/select.o')
+
+
+extensions = Extension(
+    sources = ["SpatialIndex/spatial_index.pyx"],
+    include_dirs = ["SpatialIndex/lib/include"],
+    extra_objects = objs,
 )
+
 setup(
-    name = "spatial_index",
-    version = '1.1.0',
-    author = 'John Good',
-    author_email = 'jcg@ipac.caltech.edu',
-    description = 'Library for generating DBMS spatial index constraints.',
-    long_description = open('README.md').read(),
-    license = 'LICENSE.txt',
-    keywords = 'astronomy database spatial-index',
-    url = 'https://github.com/Caltech-IPAC/SpatialIndex',
     packages = ['SpatialIndex'],
-    ext_modules = cythonize([sptind_extension])
+
+    ext_modules = cythonize(extensions,
+                            compiler_directives={'language_level' : '3str'})
 )
