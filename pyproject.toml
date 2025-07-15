@@ -1,0 +1,29 @@
+[project]
+name             = "SpatialIndex"
+version          = "2.3.0"
+authors          = [{name = "John Good", email = "jcg@ipac.caltech.edu"}]
+description      = "SpatialIndex library supporting spatial queries in relational databases."
+readme           = "README.md"
+license          = {file = "LICENSE"}
+keywords         = ["astronomy", "astronomical", "dbms", "spatial index", "search"]
+
+[tool.setuptools]
+package-dir      = {"" = "src"}
+packages         = ["SpatialIndex"]
+
+[project.urls]
+"Homepage"       = "https://github.com/Caltech-IPAC/SpatialIndex"
+
+[build-system]
+requires         = ["setuptools", "cython"]
+build-backend    = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+repair-wheel-command = ""
+
+[tool.cibuildwheel.linux]
+repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
+
+[tool.cibuildwheel.macos]
+repair-wheel-command = ""
+

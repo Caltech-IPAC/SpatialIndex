@@ -16,5 +16,5 @@ clean:
 					(cd src; make clean)
 					rm -rf build
 					rm -rf spatial_index.egg-info
-					rm spatial_index.c
+					rm -f spatial_index.c
 					rm -f make.out
